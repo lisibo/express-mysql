@@ -1,5 +1,14 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+extends header
+block append links
+  style.
+    .tips{
+      display:none;
+    }
+body
+  block append header
+    p(class="tips") welcome to #{username}
+    a(class="login" href="/login") 登录
+    include ./footer.jade
+block append scripts
+  script.
+    

@@ -1,0 +1,29 @@
+extends header
+html
+  head
+  block append links
+    
+    style.
+      #form2 label{
+        display:inline-block;
+        width:80px;
+      }
+      #form2 input{
+        margin-bottom:30px;
+        height:30px;
+      }
+      #login_btn{
+        width:60px;
+      }
+  body
+    block append header
+      form(action="/login", method="post",id="form2")
+        label(for="login_user") 用户名:
+        input(type="text",name="username",id="login_user",placeholder="请输入用户名...")
+        br
+        label(for="login_pass") 密码:
+        input(type="password",name="password",id="login_pass",placeholder="请输入密码...")
+        br
+        input(type="submit",value=title,id="login_btn")
+        include ./footer.jade
+  

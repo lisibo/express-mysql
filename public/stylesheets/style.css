@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+nav{
+  display: flex;
+}
+
+nav span{
+  display: block;
+  height: 30px;
+  margin-right: 20px;
+}
