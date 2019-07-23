@@ -2,7 +2,6 @@ extends header
 html
   head
   block append links
-    
     style.
       #form2 label{
         display:inline-block;
@@ -25,5 +24,7 @@ html
         input(type="password",name="password",id="login_pass",placeholder="请输入密码...")
         br
         input(type="submit",value=title,id="login_btn")
+        p(id="txt")
         include ./footer.jade
-  
+        script.
+        
